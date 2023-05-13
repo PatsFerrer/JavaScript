@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa..</title>
+    <title>Meu segundo programa..</title>
     <style>
         body {
             color: white;
-            background-color: rgb(69, 155, 184);
+            background-color: rgb(105, 105, 173);
             font: normal 25px Arial;
         }
 
         h1 {
-            color: yellow;
+            color: rgb(255,212,22);
         }
     </style>
 </head>
 <body>
     <h1>Olá, mundo!</h1>
-    <p>Um site lindo e gracioso.</p>
+    <p>Um site lindo, gracioso e abençoado.</p>
 
     <script>
-        window.alert('Essa é minha primeira mensagem!')
-        window.confirm('Está gostando de JS?') //Janela com botão OK e Cancel
-        window.prompt('Qual seu nome?') // Vai perguntar o nome..
+        var nome = window.prompt('Qual seu nome?')
+        window.alert('É um grande prazer te conhecer, ' + nome + '!') //concatenação
     </script>
 </body>
 </html>
