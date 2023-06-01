@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de passagens</h1>
+
+    <label for="paistxt">Qual o seu país?</label>
+    <input type="text" name="pais" id="paistxt">
+
+    <input type="button" value="Verificar" onclick="clicar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        
+        function clicar() {
+            var pais = window.document.getElementById('paistxt')
+            var res = window.document.getElementById('res')
+            res.innerHTML = `<p>seu país é ${pais.value}</p>`
+            
+            if (pais.value == 'Brasil') {
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            } else {
+                res.innerHTML += `Vivendo no país ${pais.value}! Você é estrangeiro.`
+            }
+        }
+
+    </script>
+</body>
+</html>
